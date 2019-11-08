@@ -1,0 +1,23 @@
+@import './fonts.css';
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ;
+  font-family: 'exo_2semibold';
+  font-family: 'exo_2light';
+  line-height: ;
+  margin: 0; 
+  padding: 0; 
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}

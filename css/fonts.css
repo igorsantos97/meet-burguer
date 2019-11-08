@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'exo_2bold';
+  src: url('../fonts/exo2-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo_2semibold';
+  src: url('../fonts/exo2-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'exo_2light';
+  src: url('../fonts/exo2-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo_2medium';
+  src: url('../fonts/exo2-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo_2regular';
+  src: url('../fonts/exo2-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
