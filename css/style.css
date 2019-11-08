@@ -59,6 +59,7 @@ p {
     "top-header top-header"
     "about about"
     "burger burger"
+    "banner-home banner-home"
   ;
 }
 
@@ -261,8 +262,13 @@ header li a {
   margin-bottom: 0;
 }
 
+.burgers  img {
+  height: 300px;
+}
+
 .burgers .container-burgers > div {
   max-width: 300px;
+  padding: 10px 0;
 }
 
 .burgers .description {
@@ -314,4 +320,36 @@ header li a {
 
 .burgers .container-burgers > div + div {
   margin-left: 20px;
+}
+
+/* BANNER-HOME
+*****************/
+.banner-home {
+  align-items: center;
+  background: url(../img/banner-home.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  grid-area: banner-home;
+  justify-content: flex-end;
+  margin-bottom: 800px;
+  min-height: 350px;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.banner-home p {
+  font-size: 50px;
+  color: var(--white);
+  line-height: 1.1;
+  font-family: 'exo_2bold';
+  position: relative;
+  text-shadow: -2px -2px 5px rgba(0,0,0,.5);
+  text-transform: uppercase;
+}
+
+.banner-home p span {
+  color: var(--yellow);
+  display: block;
 }
