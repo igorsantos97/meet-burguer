@@ -40,12 +40,25 @@ p {
   line-height: 1.5;
 }
 
+.tittle-default {
+  color: var(--brown);
+  font-family: 'exo_2bold';
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.tittle-default span{
+  color: var(--yellow);
+}
+
 .wrapper {
   display: grid;
   grid-template-areas: 
     "header header"
     "top-header top-header"
     "about about"
+    "burger burger"
   ;
 }
 
@@ -187,11 +200,7 @@ header li a {
 }
 
 .about h2 {
-  color: var(--brown);
-  font-family: 'exo_2bold';
   font-size: 60px;
-  margin-bottom: 20px;
-  text-transform: uppercase;  
 }
 
 .about h2 span {
@@ -233,4 +242,76 @@ header li a {
 
 .about .box-network img {
   width: 100%;
+}
+
+/* BURGER 
+********************/
+.burgers {
+  display: grid;
+  grid-area: burger;
+  padding: 30px 5px;
+}
+
+.burgers h2 {
+  text-align: center;
+}
+
+.burgers h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.burgers .container-burgers > div {
+  max-width: 300px;
+}
+
+.burgers .description {
+  background: rgb(235,235,235);
+  border-radius: 0 0 5px 5px;
+  padding: 10px 0;
+}
+
+.burgers .description > div:nth-child(1) {
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 2px var(--yellow);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+
+.burgers .description > div:nth-child(1) span {
+  font-size: 18px;
+}
+
+.burgers .description > div:nth-child(1)::after {
+  content: '';
+  background: var(--brown);
+  bottom: -1px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  width: 70px;
+}
+
+.burgers .description > div:nth-child(1) span{
+  color: var(--yellow);
+  font-family: 'exo_2bold';
+}
+
+.burgers .description > div:nth-child(2) {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.burgers .container-burgers {
+  display: flex;
+  overflow: auto;
+}
+
+.burgers .container-burgers > div + div {
+  margin-left: 20px;
 }
