@@ -24,6 +24,7 @@ ul {
 }
 
 body {
+  color: var(--brown);
   font-family: 'latoregular';
   line-height: 1.1;
   margin: 0; 
@@ -44,6 +45,7 @@ p {
   grid-template-areas: 
     "header header"
     "top-header top-header"
+    "about about"
   ;
 }
 
@@ -168,4 +170,67 @@ header li a {
   font-family: 'exo_2light';
   font-size: 22px;
   margin-left: 10px;
+}
+
+/* about */
+.about {
+  display: grid;
+  grid-area: about;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px 10%;
+}
+
+.about > div:nth-child(1) {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  color: var(--brown);
+  font-family: 'exo_2bold';
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;  
+}
+
+.about h2 span {
+  color: var(--yellow);
+}
+
+.about p + p {
+  margin-top: 20px;
+}
+
+.about > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.about .box-network {
+  display: flex;
+  margin-top: 20px;
+}
+
+.about .box-network span {
+  border: solid 1px var(--brown);
+  box-shadow: 1px 1px 2px var(--yellow);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  padding: 10px;
+  transition: .3s;
+  width: 40px;
+}
+
+.about .box-network span:hover {
+  background: var(--brown);
+}
+
+.about .box-network span + span {
+  margin-left: 10px;
+}
+
+.about .box-network img {
+  width: 100%;
 }
