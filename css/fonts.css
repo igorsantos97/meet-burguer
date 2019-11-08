@@ -10,7 +10,6 @@
   src: url('../fonts/exo2-semibold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
@@ -30,6 +29,28 @@
 @font-face {
   font-family: 'exo_2regular';
   src: url('../fonts/exo2-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'latosemibold';
+  src: url('../fonts/lato-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latolight';
+  src: url('../fonts/lato-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoregular';
+  src: url('../fonts/lato-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

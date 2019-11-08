@@ -1,5 +1,11 @@
 @import './fonts.css';
 
+:root {
+  --brown: rgb(94,64,30);
+  --yellow: rgb(255,168,0);
+  --white: #fff;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -8,11 +14,18 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 body {
-  font-family: ;
-  font-family: 'exo_2semibold';
-  font-family: 'exo_2light';
-  line-height: ;
+  font-family: 'latoregular';
+  line-height: 1.1;
   margin: 0; 
   padding: 0; 
 }
@@ -20,4 +33,139 @@ body {
 h1,h2,h3,h4,h5,h6,p {
   margin: 0;
   padding: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "top-header top-header"
+  ;
+}
+
+/* header */
+header {
+  background: var(--yellow);
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 1fr auto;
+  padding: 30px;
+}
+
+header ul {
+  display: flex;
+}
+
+header li + li {
+  margin-left: 45px;
+}
+
+header li a {
+  color: var(--white);
+  font-size: 16px;
+}
+
+#logo {
+  color: var(--white);
+  display: flex;
+  font-family: 'exo_2bold';
+  text-transform: uppercase;
+  line-height: .8;
+}
+
+#logo img {
+  display: inline-block;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#logo span {
+  color: var(--brown);
+  display: block;
+}
+
+
+/* top-header
+*******************/
+.top-banner {
+  background: var(--yellow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: top-header;
+  min-height: 350px;
+  padding: 0 10%;
+}
+
+.top-banner::after {
+
+}
+
+.top-banner img {
+  bottom: -23px;
+  display: block;
+  margin-bottom: -100px;
+  width: 100%; 
+}
+
+.top-banner > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.top-banner > div {
+  color: var(--brown);
+  text-transform: uppercase;
+}
+
+.top-banner > div p {
+  text-transform: initial;
+}
+
+.top-banner > div > span {
+  font-family: 'exo_2semibold';
+  font-size: 20px;
+}
+
+.top-banner > div > h2 {
+  font-size: 60px;
+  position: relative;
+}
+
+.top-banner > div > h2:not(span)::after {
+  content: 'DOUBLE';
+  position: absolute;
+  color: rgba(255,255,255,.3);
+  left: -100px;
+  top: -80px;
+  font-size: 100px;
+}
+
+.top-banner > div > h2 span {
+  color: var(--white);
+  font-family: 'exo_2bold';
+  font-weight: 900;
+}
+
+.top-banner .price-banner {
+  margin-top: 35px;
+}
+
+.top-banner .price-banner ins {
+  color: var(--white);
+  font-size: 45px;
+  font-family: 'exo_2bold';
+  text-decoration: none;
+}
+
+.top-banner .price-banner del {
+  color: var(--white);
+  font-family: 'exo_2light';
+  font-size: 22px;
+  margin-left: 10px;
 }
