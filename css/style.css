@@ -245,6 +245,58 @@ header li a {
   width: 100%;
 }
 
+.about .tabnav-nav {
+  margin-bottom: 10px;
+}
+
+.about .tabnav-nav ul { 
+  display: flex;
+}
+
+.about .tabnav-nav li {
+  position: relative;
+  cursor: pointer;
+} 
+
+
+.about .tabnav-nav ul li + li {
+  margin-left: 30px;
+}
+
+.about .tabnav-nav ul li.active::after {
+  background: var(--yellow);
+  bottom: -15px;
+  content: '';
+  display: block;
+  height: 2px;  
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.about .tabnav-content {
+  min-height: 120px;
+}
+
+.about .tabnav-content section {
+  display: none;
+}
+
+.about .tabnav-content section.active {
+  display: block;
+  animation: animaTabs .5s forwards;
+}
+
+@keyframes animaTabs {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 /* BURGER 
 ********************/
 .burgers {
