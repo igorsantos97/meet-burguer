@@ -8,7 +8,6 @@ export default function initScrollSmooth() {
         const id = this.getAttribute('href');
         const section = document.querySelector(id);
 
-
         section.scrollIntoView({
             behavior: 'smooth',
             block: 'start',
